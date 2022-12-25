@@ -91,10 +91,10 @@ namespace WindowsFormsApp2
                 operatorState = true;
                 this.textBox2.Text = this.textBox1.Text + operatorList;
             }
-            if (buttonText.Text == "x")
+            if (buttonText.Text == "*")
             {
                 num1 = double.Parse(this.textBox1.Text);
-                operatorList = "x";
+                operatorList = "*";
                 operatorState = true;
                 this.textBox2.Text = this.textBox1.Text + operatorList;
             }
@@ -121,7 +121,7 @@ namespace WindowsFormsApp2
                     this.textBox2.Text = num1.ToString() + operatorList + " = " + num2.ToString();
 
                 }
-                if (operatorList == "x")
+                if (operatorList == "*")
                 {
                     this.textBox1.Text = (num1 * num2).ToString();
                     this.textBox2.Text = num1.ToString() + " " + operatorList + " = " + num2.ToString();
